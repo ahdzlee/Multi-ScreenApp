@@ -14,7 +14,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void send(View view) {
+        String sendMe = "This is the message I want to send!";
         Intent intent = new Intent(this, SecondActivity.class);
+        intent.putExtra("key-sent-message", sendMe);
         startActivity(intent);
     }
 }
