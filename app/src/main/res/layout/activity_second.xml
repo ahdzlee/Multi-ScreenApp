@@ -1,45 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="16dp"
-    tools:context="tech.hyperdev.multi_screenapp.MainActivity">
+    tools:context="tech.hyperdev.multi_screenapp.SecondActivity">
 
     <TextView
-        android:id="@+id/tvReplyHolder"
+        android:id="@+id/tvSentMsgHolder"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Replied Message:"
+        android:text="Sent Message:"
         android:visibility="gone"
-        android:textStyle="bold"/>
+        android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/tvReply"
+        android:id="@+id/tvSentMsg"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
         android:layout_below="@+id/tvReplyHolder"
+        android:layout_marginLeft="16dp"
         android:visibility="gone"
-        tools:text="This is the replied message"/>
+        tools:text="This is the sent message" />
 
     <EditText
         android:id="@+id/etMessage"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Enter text message"
-        android:layout_alignParentBottom="true"
-        android:layout_toLeftOf="@+id/btnSend"/>
-
-    <Button
-        android:id="@+id/btnSend"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Send"
-        android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:onClick="send"/>
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/btnReply"
+        android:layout_toStartOf="@+id/btnReply"
+        android:hint="Enter your reply" />
+
+    <Button
+        android:id="@+id/btnReply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="Reply"
+        android:onClick="reply"/>
 
 </RelativeLayout>
