@@ -25,7 +25,7 @@
         tools:text="This is the sent message" />
 
     <EditText
-        android:id="@+id/etMessage"
+        android:id="@+id/etReplyMessage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
