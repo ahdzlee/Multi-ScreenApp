@@ -19,7 +19,7 @@
         android:id="@+id/tvSentMsg"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/tvReplyHolder"
+        android:layout_below="@+id/tvSentMsgHolder"
         android:layout_marginLeft="16dp"
         android:visibility="gone"
         tools:text="This is the sent message" />
